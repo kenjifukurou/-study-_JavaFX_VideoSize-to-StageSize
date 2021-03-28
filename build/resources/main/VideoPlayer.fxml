@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.media.MediaView?>
+
+<AnchorPane fx:id="anchorpane_video" prefHeight="480.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+   <children>
+      <MediaView fx:id="mv1" />
+      <Button fx:id="btn_getWindow" layoutX="566.0" layoutY="441.0" mnemonicParsing="false" onAction="#handleGetWindow" text="Get Window" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+      <Button fx:id="btn_disposeVideo" layoutX="558.0" layoutY="455.0" mnemonicParsing="false" onAction="#handleDisposeVideo" text="Dispose Video" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="100.0" />
+      <Button fx:id="btn_play" contentDisplay="TOP" layoutX="23.0" layoutY="366.0" mnemonicParsing="false" onAction="#handleButtonPlay" onMouseEntered="#handleMouseOver" text="Play" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0">
+         <graphic>
+            <ImageView fitHeight="150.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Play1Pressed.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button fx:id="btn_stop" contentDisplay="TOP" layoutX="123.0" layoutY="366.0" mnemonicParsing="false" onAction="#handleButtonStop" onMouseEntered="#handleMouseOver" text="Stop" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="100.0">
+         <graphic>
+            <ImageView fitHeight="150.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Stop1PressedBlue.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+   </children>
+</AnchorPane>
